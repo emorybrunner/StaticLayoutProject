@@ -209,17 +209,66 @@ header{
     background-color: #f5f5f5;
 }
 
+svg {
+    width: 24px;
+    height: 24px;
+}
+
+
 #searchIcon{
     position: relative;
-    z-index: 1;
-    left: 1175px;
+    z-index: 100;
+    width: 24px;
+    height: 24px;
+    left:1180px;
     bottom: 125px;
+    fill: #505050;
+    transition: 0.1s;
+    transition-timing-function: ease-in-out;
 }
+
+#searchIcon:hover {
+    fill: rgb(21, 114, 229)
+}
+
+#menu-toggle {
+    display: none;
+}
+
+#collapse-menu {
+    position: relative;
+    width: 1280px;
+    height: 80px;
+    background-color: white;
+    margin-top: -110px;
+    transition: transform 0.1s;
+    transform-origin: top;
+    z-index: 110;
+}
+
+input {
+    position: relative;
+    width: 1158px;
+    height: 34px;
+    margin-left: 61px;
+    margin-top: 20px;
+    border: 1px solid  rgb(21, 114, 229);
+    border-radius: 4px;
+    font-size: 14px;
+    background: url(assets/Screen\ Shot\ 2020-10-13\ at\ 11.08.48\ PM.png) no-repeat scroll 3px 3px;
+    background-position-x: 1120px;
+    z-index: 110;
+}
+
+input:not(:checked) ~ #collapse-menu {
+    transform: scaleY(0);
+}
+
 
 #signIn{
     position: relative;
     left: 1215px;
-    bottom: 152px;
+    bottom: 121px;
     font-size: 14px;
     z-index: 2;
     color: black;
@@ -240,7 +289,6 @@ header{
     top: 0px;
     z-index: 101;
     position: sticky;
-    overflow: hidden;
 }
 
 @supports (-webkit-overflow-scrolling: touch) {
@@ -374,20 +422,6 @@ header{
     top: 512px;
 }
 
-
-#popUp {
-    background: #ddd;
-    color: #333;
-    display: inline-block;
-    font-size: 14px;
-    line-height: 4em;
-    margin-bottom: 1em;
-    padding: 0 1em;
-    position: relative;
-    text-align: center;
-    vertical-align: top;
-    min-width: 7em;
-}
 
 .video{
     position: relative;
