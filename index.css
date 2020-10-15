@@ -20,9 +20,6 @@ button {
     background-color: transparent;
 }
 
-a {
-    color: white;
-}
 
 header{
     position: relative;
@@ -43,6 +40,11 @@ header{
     z-index: 0;
 }
 
+#covidLink {
+    color: white;
+    margin-left: 5px;
+}
+
 #xOut {
     width: 15px;
     height: 15px;
@@ -50,6 +52,7 @@ header{
     bottom: 34px;
     left: 1250px;
     z-index: 1;
+    cursor: pointer;
 }
 
 #homeBar {
@@ -215,14 +218,18 @@ header{
 
 #signIn{
     position: relative;
-    left: 1220px;
-    bottom: 165px;
+    left: 1215px;
+    bottom: 152px;
     font-size: 14px;
     z-index: 2;
+    color: black;
+    text-decoration: none;
+    transition: 0.1s;
+    transition-timing-function: ease-in-out;
 }
 
 #signIn:hover{
-    color: rgb(46, 78, 255);
+    color: rgb(21, 114, 229);
 }
 
 
@@ -231,7 +238,7 @@ header{
     background-color: RGB(250, 250, 250, 0.8);
     width: 100%;
     top: 0px;
-    z-index: 98;
+    z-index: 101;
     position: sticky;
     overflow: hidden;
 }
@@ -243,7 +250,7 @@ header{
 }
 
 #optionsNavBar {
-    padding: 20px 200px 0 200px;
+    padding: 20px 300px 0 300px;
     font-size: 14px;
     height: 80px;
     z-index: 99;
@@ -273,7 +280,7 @@ header{
 }
 
 #ButtonOne:hover {
-    background-color: rgb(225, 225, 225, 0.8);
+    background-color: rgb(185, 185, 185, 0.5);
     z-index: 100;
 }
 
@@ -292,7 +299,7 @@ header{
 }
 
 #ButtonTwo:hover {
-    background-color: rgb(225, 225, 225, 0.8);
+    background-color: rgb(185, 185, 185, 0.5);
     z-index: 100;
 }
 
@@ -311,7 +318,7 @@ header{
 }
 
 #ButtonThree:hover {
-    background-color: rgb(225, 225, 225, 0.8);
+    background-color: rgb(185, 185, 185, 0.5);
     z-index: 100;
 }
 
@@ -330,7 +337,7 @@ header{
 }
 
 #ButtonFour:hover {
-    background-color: rgb(225, 225, 225, 0.8);
+    background-color: rgb(185, 185, 185, 0.5);
     z-index: 100;
 }
 
@@ -349,7 +356,7 @@ header{
 }
 
 #ButtonFive:hover {
-    background-color: rgb(225, 225, 225, 0.8);
+    background-color: rgba(185, 185, 185, 0.5);
     z-index: 100;
 }
 
@@ -365,6 +372,21 @@ header{
     border-radius: 100%;
     left: 1166px;
     top: 512px;
+}
+
+
+#popUp {
+    background: #ddd;
+    color: #333;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 4em;
+    margin-bottom: 1em;
+    padding: 0 1em;
+    position: relative;
+    text-align: center;
+    vertical-align: top;
+    min-width: 7em;
 }
 
 .video{
@@ -466,13 +488,14 @@ header{
     position: relative;
     display: flex;
     flex-flow: row wrap;
+    height: 200px;
 }
 
 #beatYourGoal {
     position: relative;
     width: 632px;
     height: auto;
-    left: 32px;
+    left: 23px;
     bottom: 226px;
 }
 
@@ -482,7 +505,7 @@ header{
     height: 357px;
     font-size: 15.5px;
     left: 80px;
-    bottom: 120px;
+    bottom: 136px;
 }
 
 #centerTextHeading {
@@ -507,12 +530,14 @@ header{
 }
 
 .icons {
-
+    position: relative;
+    top: 140px;
 }
 
 #iconsTitle {
     color: #505050;
-
+    margin-left: 107px;
+    font-size: 16px;
 }
 
 .iconsTop {
@@ -523,6 +548,8 @@ header{
 
 hr {
     width: 1066px;
+    border: 1px solid #c9c9c9;
+    margin-top: -5px;
 }
 
 h4 {
@@ -535,67 +562,134 @@ h4 {
     display: flex;
     flex-flow: row nowrap;
     color: #505050;
-    
 }
 
 #iconXD {
     margin-top: 19px;
 }
 
+#XDheader {
+    margin-top: 23px;
+}
+
 #textXD {
     margin-left: 12px;
-    margin-bottom: px;
+    font-size: 16px;
+    width: 250px;
+}
+
+#XDtext {
+    margin-top: -17px;
 }
 
 #adobeIllustrator {
-
+    width: 355px;
+    display: flex;
+    flex-flow: row nowrap;
+    color: #505050;
 }
 
 #iconIllustrator {
-
+    margin-top: 19px;
 }
 
 #textIllustrator {
+    margin-left: 12px;
+    margin-top: -5px;
+    font-size: 16px;
+    width: 250px;
+}
 
+#IllustratorHeader {
+    margin-top: 18px;
+}
+
+#IllustratorText {
+    margin-top: -16px;
 }
 
 #adobeInDesign {
-
+    width: 355px;
+    display: flex;
+    flex-flow: row nowrap;
+    color: #505050;
 }
 
 #iconInDesign {
-
+    margin-top: 19px;
 }
 
 #textInDesign {
+    margin-left: 12px;
+    margin-top: -1px;
+    font-size: 16px;
+    width: 250px;
+}
 
+#InDesignHeader {
+    margin-top: 23px;
+}
+
+#InDesignText {
+    margin-top: -16px;
 }
 
 .iconsBottom {
-
+    display: flex;
+    flex-flow: row nowrap; 
+    width: 60%;
+    margin-left: 107px;
 }
 
 #adobeSpark {
-
+    width: 355px;
+    display: flex;
+    flex-flow: row nowrap;
+    color: #505050;
 }
 
 #iconSpark {
-
+    margin-top: 19px;
 }
 
 #textSpark {
+    margin-left: 12px;
+    margin-top: -1px;
+    font-size: 16px;
+    width: 250px;
+}
 
+#sparkHeader {
+    margin-top: 23px;
+}
+
+#sparkText {
+    margin-top: -16px;
 }
 
 #CLL {
-
+    width: 355px;
+    display: flex;
+    flex-flow: row nowrap;
+    color: #505050;
 }
 
 #iconCLL {
-
+    margin-top: 19px;
 }
 
 #textCLL {
+    margin-left: 12px;
+    margin-top: -1px;
+    font-size: 16px;
+    width: 250px;
+}
 
+#CLLheader {
+    margin-top: 23px;
+}
+
+#CLLtext {
+    margin-top: -16px;
 }
 
